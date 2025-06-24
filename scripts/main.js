@@ -1,1 +1,1 @@
-console.log('Nudge landing page loaded.');
+import './components/DesktopNavbar.js';
