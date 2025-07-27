@@ -51,6 +51,16 @@ class MobileNavbar extends HTMLElement {
       item.addEventListener('click', () => closeNavPanel());
     });
 
+    // close nav panel when pressing Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' || e.key === 'Esc') {
+        const isOpen = navPanel.hasAttribute('data-open');
+        if (!isOpen) return;
+
+        closeNavPanel();
+      }
+    });
+
     // functions
     const openNavPanel = () => {
       navPanel.setAttribute('data-open', '');
