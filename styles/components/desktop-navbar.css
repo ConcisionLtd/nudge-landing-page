@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
 
-  .logo-full {
+  & .logo-full {
     display: none;
 
     @media (min-width: 1280px) {
@@ -11,7 +11,7 @@
     }
   }
 
-  .logo-icon-only {
+  & .logo-icon-only {
     display: block;
 
     @media (min-width: 1280px) {
@@ -19,18 +19,20 @@
     }
   }
 
-  .nav-links {
+  & .nav-links {
     padding: 0;
     display: flex;
     align-items: center;
     column-gap: 1rem;
-    list-style-type: none;
 
     @media (min-width: 1280px) {
       column-gap: 2.5rem;
     }
+  }
 
-    @media (min-width: 1536px) {
-    }
+  & .actions {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
   }
 }
