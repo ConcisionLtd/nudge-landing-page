@@ -6,6 +6,7 @@ class MobileNavbar extends HTMLElement {
 
     const toggleButton = this.querySelector('.hamburger');
     const navPanel = this.querySelector('.offcanvas-panel');
+    const navItems = navPanel.querySelectorAll('.nav-item');
     const overlay = this.querySelector('.overlay');
 
     // hamburger toggle
@@ -43,6 +44,11 @@ class MobileNavbar extends HTMLElement {
       if (!clickedInsidePanel && !clickedHamburger) {
         closeNavPanel();
       }
+    });
+
+    // close nav panel when clicking on nav items
+    navItems.forEach((item) => {
+      item.addEventListener('click', () => closeNavPanel());
     });
 
     // functions
