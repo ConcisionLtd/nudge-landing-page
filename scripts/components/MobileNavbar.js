@@ -7,7 +7,6 @@ class MobileNavbar extends HTMLElement {
     const toggleButton = this.querySelector('.hamburger');
     const navPanel = this.querySelector('.offcanvas-panel');
     const navItems = navPanel.querySelectorAll('.nav-item');
-    const overlay = this.querySelector('.overlay');
 
     // hamburger toggle
     if (toggleButton && navPanel) {
@@ -65,19 +64,11 @@ class MobileNavbar extends HTMLElement {
     const openNavPanel = () => {
       navPanel.setAttribute('data-open', '');
       toggleButton.setAttribute('aria-expanded', 'true');
-
-      if (overlay) {
-        overlay.hidden = false;
-      }
     };
 
     const closeNavPanel = () => {
       navPanel.removeAttribute('data-open');
       toggleButton.setAttribute('aria-expanded', 'false');
-
-      if (overlay) {
-        overlay.hidden = true;
-      }
     };
   }
 }
