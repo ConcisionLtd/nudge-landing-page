@@ -1,0 +1,145 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  font-size: var(--font-size-xl);
+
+  & .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-block: 5vh;
+    padding-inline: 1rem;
+  }
+
+  & .hero-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    & .cta-button {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  & .hero-description {
+    line-height: var(--line-height-relaxed);
+  }
+
+  & .hero-title {
+    font-size: var(--font-size-6xl);
+    text-wrap: balance;
+  }
+
+  & .cta-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+
+    & .helper {
+      font-size: var(--font-size-md);
+    }
+  }
+
+  & .hero-image {
+    position: static;
+    width: 100%;
+
+    & > picture,
+    & img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  /* control positioning of hero text and image */
+  @media (min-width: 640px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+    --top-spacing: 10vh;
+
+    & .hero-text {
+      max-width: 416px;
+
+      & .cta-button {
+        display: inline;
+      }
+    }
+
+    & .hero-content {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      row-gap: 3rem;
+      max-width: 1024px;
+      padding-top: var(--top-spacing);
+      padding-inline: 6vw;
+    }
+
+    & .hero-image {
+      position: absolute;
+      top: var(--top-spacing);
+      right: -30vw;
+      width: 75vw;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    --top-spacing: 10vh;
+
+    & .hero-content {
+      max-width: 1280px;
+      padding-top: var(--top-spacing);
+      padding-inline: 6vw;
+    }
+
+    & .hero-image {
+      top: var(--top-spacing);
+      right: -8vw;
+      width: 55vw;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    --top-spacing: 15vh;
+
+    & .hero-content {
+      max-width: 1500px;
+      padding-top: var(--top-spacing);
+      padding-inline: 8vw;
+    }
+
+    & .hero-image {
+      top: var(--top-spacing);
+      right: -2vw;
+      width: 50vw;
+    }
+  }
+
+  @media (min-width: 2500px) {
+    --top-spacing: 15vh;
+
+    & .hero-content {
+      max-width: 1700px;
+      padding-top: var(--top-spacing);
+      padding-inline: 10vw;
+    }
+
+    & .hero-image {
+      top: var(--top-spacing);
+      right: -2vw;
+      width: 50vw;
+    }
+  }
+}

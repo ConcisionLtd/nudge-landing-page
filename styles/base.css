@@ -13,6 +13,30 @@ html {
   }
 }
 
+body {
+  margin-inline: 0;
+}
+
+/***** display *****/
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+}
+
 /* accessibility */
 button:focus-visible,
 a:focus-visible {
@@ -73,6 +97,11 @@ button {
     }
   }
 
+  &.large {
+    padding: 0.75rem 2rem;
+    font-size: var(--font-size-xl);
+  }
+
   & > a {
     cursor: default;
   }
@@ -87,6 +116,18 @@ button {
   @media (min-width: 640px) {
     padding-inline: 2rem;
   }
+}
+
+/* headings */
+h1,
+h2 {
+  margin: 0;
+}
+
+/* helper */
+.helper {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
 }
 
 /* links */
@@ -151,4 +192,17 @@ a {
   &[data-open] {
     transform: translateX(0);
   }
+}
+
+/* text */
+.text-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.text-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.text-italic {
+  font-style: italic;
 }
