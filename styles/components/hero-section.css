@@ -48,13 +48,6 @@
   }
 
   & .hero-logo {
-    display: none;
-    transition: opacity 0.4s ease;
-
-    &.hidden {
-      opacity: 0;
-    }
-
     & img {
       height: 2.75rem;
       width: auto;
@@ -95,7 +88,6 @@
     }
 
     & .hero-logo {
-      display: block;
       position: absolute;
       top: 5rem;
       right: 8rem;
@@ -212,5 +204,38 @@
       right: -2vw;
       width: 55vw;
     }
+  }
+}
+
+/* transition on load */
+.hero-text,
+.hero-logo,
+.hero-image {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.hero.visible {
+  & .hero-text,
+  & .hero-logo:not(.hidden-on-scroll),
+  & .hero-image {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* transition on scroll */
+.hero-logo {
+  &.hidden-on-scroll {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  &.visible-on-scroll {
+    opacity: 1;
+    transition: opacity 0.4s ease;
   }
 }

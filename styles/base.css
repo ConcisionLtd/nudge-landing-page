@@ -15,6 +15,7 @@ html {
 
 body {
   margin-inline: 0;
+  overflow-x: hidden;
 }
 
 /***** display *****/
