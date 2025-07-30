@@ -45,7 +45,23 @@
     column-gap: 1rem;
 
     @media (min-width: 1280px) {
+      column-gap: 1.5rem;
+    }
+
+    @media (min-width: 1400px) {
+      column-gap: 1.75rem;
+    }
+
+    @media (min-width: 1536px) {
       column-gap: 2.5rem;
+    }
+
+    @media (min-width: 1920px) {
+      column-gap: 2.75rem;
+    }
+
+    @media (min-width: 2500px) {
+      column-gap: 3.5rem;
     }
   }
 

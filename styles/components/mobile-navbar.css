@@ -1,5 +1,5 @@
 .mobile-nav-container {
-  padding: 1.25rem 0.75rem;
+  padding: 1.25rem 1rem;
 
   & .nav-top {
     display: flex;
@@ -61,7 +61,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--color-gray-lighter);
+    background-color: var(--color-overlay);
     z-index: var(--z-index-overlay);
     opacity: 0;
     pointer-events: none;
