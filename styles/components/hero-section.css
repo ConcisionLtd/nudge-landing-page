@@ -152,7 +152,7 @@
   }
 
   @media (min-width: 1536px) {
-    --top-spacing: 25vh;
+    --top-spacing: 23vh;
 
     & .hero-content {
       max-width: 1500px;
