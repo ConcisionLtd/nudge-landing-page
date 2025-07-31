@@ -4,6 +4,8 @@
   left: 0;
   right: 0;
   z-index: var(--z-index-nav);
+  background-color: #ffffff66;
+  backdrop-filter: blur(10px);
 
   /* transition on scroll */
   &.visible {
@@ -21,6 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-inline: 2rem;
 
   & .logo-full {
     display: none;

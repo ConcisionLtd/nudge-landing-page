@@ -1,6 +1,8 @@
 import './components/DesktopNavbar.js';
 import './components/MobileNavbar.js';
 import './components/HeroSection.js';
+import './components/HowSection.js';
+import './components/WorkflowStep.js';
 
 // on load: show the hero section elements
 window.addEventListener('DOMContentLoaded', () => {

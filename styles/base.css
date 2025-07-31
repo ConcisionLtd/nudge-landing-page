@@ -2,6 +2,8 @@
 @import url(components/desktop-navbar.css);
 @import url(components/mobile-navbar.css);
 @import url(components/hero-section.css);
+@import url(components/how-section.css);
+@import url(components/workflow-step.css);
 
 html {
   box-sizing: border-box;
@@ -17,6 +19,23 @@ body {
   margin-block: 0.75rem;
   margin-inline: 0;
   overflow-x: hidden;
+  font-family: system-ui, sans-serif;
+  font-size: var(--font-size-xl);
+  color: var(--color-text-default);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8rem;
+
+  @media (min-width: 1024px) {
+    row-gap: 16rem;
+  }
+
+  @media (min-width: 2500px) {
+    row-gap: 24rem;
+  }
 }
 
 /***** display *****/
@@ -58,11 +77,9 @@ a:focus-visible {
   border-radius: var(--radius-xs);
 }
 
-/* body */
-body {
-  font-family: system-ui, sans-serif;
-  font-size: var(--font-size-md);
-  color: var(--color-text-default);
+/* border */
+.border-dashed {
+  border: 2px dashed var(--color-border-muted);
 }
 
 /* button */
@@ -81,6 +98,7 @@ button {
 .btn {
   padding: 0.5rem 1rem;
   border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-normal);
 
@@ -122,19 +140,55 @@ button {
 
 /* container */
 .container {
-  max-width: 1920px;
+  max-width: 100%;
   margin-inline: auto;
-  padding-inline: 0;
+  padding-inline: 1rem;
 
   @media (min-width: 640px) {
-    padding-inline: 2rem;
+    max-width: 600px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: 1536px) {
+    max-width: 1320px;
+  }
+
+  @media (min-width: 1920px) {
+    max-width: 1440px;
   }
 }
 
 /* headings */
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
+}
+
+.section-heading {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
+
+  @media (min-width: 1024px) {
+    margin-bottom: 6rem;
+  }
 }
 
 /* helper */

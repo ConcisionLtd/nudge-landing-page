@@ -1,8 +1,6 @@
-.hero {
+.hero.container {
   position: relative;
-  min-height: 100svh;
   display: flex;
-  font-size: var(--font-size-xl);
 
   & .hero-content {
     display: flex;
@@ -13,7 +11,7 @@
     width: 100%;
     max-width: 1280px;
     margin-inline: auto;
-    padding-block: 5vh;
+    padding-top: 5vh;
     padding-inline: 1rem;
   }
 
@@ -66,15 +64,22 @@
   }
 
   /* control positioning of hero text and image */
+  @media (min-width: 768px) {
+    & .hero-text .cta-button {
+      display: inline;
+    }
+  }
+
   @media (min-width: 1024px) {
     --top-spacing: 18vh;
 
+    /* undo .container styles */
+    max-width: 100%;
+    margin-inline: 0;
+    padding-inline: 0;
+
     & .hero-text {
       max-width: 416px;
-
-      & .cta-button {
-        display: inline;
-      }
     }
 
     & .hero-content {
@@ -149,7 +154,7 @@
     & .hero-content {
       max-width: 1500px;
       padding-top: var(--top-spacing);
-      padding-inline: 8vw;
+      padding-inline: 12vw;
     }
 
     & .hero-logo {
@@ -202,7 +207,7 @@
     & .hero-image {
       top: var(--top-spacing);
       right: -2vw;
-      width: 55vw;
+      width: 50vw;
     }
   }
 }
