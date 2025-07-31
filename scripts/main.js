@@ -3,6 +3,8 @@ import './components/MobileNavbar.js';
 import './components/HeroSection.js';
 import './components/HowSection.js';
 import './components/WorkflowStep.js';
+import './components/WhatSection.js';
+import './components/BenefitItem.js';
 
 // on load: show the hero section elements
 window.addEventListener('DOMContentLoaded', () => {

@@ -8,10 +8,6 @@
   border-radius: var(--radius-2xl);
   background-color: #ffffff;
 
-  @media (min-width: 1024px) {
-    padding: 2rem 1.5rem;
-  }
-
   & .step-number {
     background-color: var(--color-primary-lighter);
     border-radius: var(--radius-full);
@@ -33,6 +29,8 @@
   }
 
   & .step-description {
+    text-align: center;
+    line-height: var(--line-height-normal);
     white-space: pre-line;
   }
 
@@ -45,6 +43,14 @@
       width: 100%;
       height: auto;
       display: block;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 2rem 1.5rem;
+
+    & .step-description {
+      text-align: start;
     }
   }
 }

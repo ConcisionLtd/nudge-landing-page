@@ -8,13 +8,5 @@
     @media (min-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);
     }
-
-    @media (min-width: 1280px) {
-      margin-inline: 4rem;
-    }
-
-    @media (min-width: 1920px) {
-      margin-inline: 6rem;
-    }
   }
 }

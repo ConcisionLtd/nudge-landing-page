@@ -1,0 +1,15 @@
+.what-section {
+  & .benefits-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    
+    @media (min-width: 1024px) {
+        margin-inline: 8rem;
+    }
+    
+    @media (min-width: 1280px) {
+        margin-inline: 12rem;
+    }
+  }
+}
