@@ -1,0 +1,19 @@
+.call-to-action-widget {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  border-radius: var(--radius-2xl);
+  background-color: var(--color-gray-lighter);
+
+  & .heading {
+    line-height: var(--line-height-snug);
+  }
+
+  @media (min-width: 1024px) {
+    width: 712px;
+    padding: 3.5rem 2rem;
+    margin-inline: auto;
+  }
+}

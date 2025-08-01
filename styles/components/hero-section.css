@@ -193,6 +193,8 @@
   @media (min-width: 2500px) {
     --top-spacing: 20vh;
 
+    margin-bottom: 10rem;
+
     & .hero-content {
       max-width: 1700px;
       padding-top: var(--top-spacing);

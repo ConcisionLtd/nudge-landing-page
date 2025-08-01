@@ -1,6 +1,7 @@
 @import url(variables.css);
 @import url(components/desktop-navbar.css);
 @import url(components/mobile-navbar.css);
+@import url(components/call-to-action-widget.css);
 @import url(components/hero-section.css);
 @import url(components/how-section.css);
 @import url(components/workflow-step.css);
@@ -37,7 +38,7 @@ main {
   }
 
   @media (min-width: 2500px) {
-    row-gap: 24rem;
+    row-gap: 20rem;
   }
 }
 
@@ -143,6 +144,7 @@ button {
 
 /* container */
 .container {
+  width: 100%;
   max-width: 100%;
   margin-inline: auto;
   padding-inline: 1rem;
