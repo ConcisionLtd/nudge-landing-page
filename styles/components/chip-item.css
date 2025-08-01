@@ -1,0 +1,10 @@
+.chip-item {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-lg);
+    color: var(--color-primary-darker);
+    background-color: var(--color-primary-lightest-1);
+}
