@@ -1,0 +1,7 @@
+.pricing-section {
+  text-align: center;
+
+  & .message {
+    font-size: var(--font-size-2xl);
+  }
+}

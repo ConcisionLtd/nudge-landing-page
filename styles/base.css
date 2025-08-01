@@ -9,6 +9,7 @@
 @import url(components/benefit-item.css);
 @import url(components/who-section.css);
 @import url(components/chip-item.css);
+@import url(components/pricing-section.css);
 
 html {
   box-sizing: border-box;
@@ -142,6 +143,19 @@ button {
   & > a {
     cursor: default;
   }
+}
+
+/* color */
+.text-subtle {
+  color: var(--color-text-subtle);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-primary {
+  color: var(--color-primary);
 }
 
 /* container */
