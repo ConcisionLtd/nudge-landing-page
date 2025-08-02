@@ -11,6 +11,7 @@
 @import url(components/chip-item.css);
 @import url(components/pricing-section.css);
 @import url(components/faq-section.css);
+@import url(components/footer-section.css);
 
 html {
   box-sizing: border-box;
@@ -55,6 +56,10 @@ main {
   display: none;
 }
 
+.flex {
+  display: flex;
+}
+
 /* lg */
 @media (min-width: 1024px) {
   .lg\:block {
@@ -83,6 +88,25 @@ a:focus-visible {
   outline: 2px solid var(--color-primary-light);
   outline-offset: 2px;
   border-radius: var(--radius-xs);
+}
+
+/* anchor */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-primary-light);
+    outline-offset: 2px;
+    border-radius: var(--radius-xs);
+  }
 }
 
 /* border */
