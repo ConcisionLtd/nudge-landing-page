@@ -1,0 +1,9 @@
+.faq-section {
+  & .faq-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 2.5rem;
+    line-height: var(--line-height-normal);
+  }
+}

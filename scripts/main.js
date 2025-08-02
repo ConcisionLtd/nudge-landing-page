@@ -9,6 +9,7 @@ import './components/BenefitItem.js';
 import './components/WhoSection.js';
 import './components/ChipItem.js';
 import './components/PricingSection.js';
+import './components/FaqSection.js';
 
 // on load: show the hero section elements
 window.addEventListener('DOMContentLoaded', () => {

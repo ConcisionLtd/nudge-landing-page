@@ -4,7 +4,6 @@
     flex-direction: column;
     row-gap: 2.5rem;
     padding: 1.5rem 1rem;
-    border-radius: var(--radius-2xl);
     line-height: var(--line-height-normal);
 
     & .who-chips {

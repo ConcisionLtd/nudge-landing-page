@@ -6,7 +6,6 @@
 
   & .icon-container {
     padding: 1.5rem;
-    border-radius: var(--radius-2xl);
 
     & .benefit-icon {
       color: var(--color-primary);

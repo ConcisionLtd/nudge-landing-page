@@ -10,6 +10,7 @@
 @import url(components/who-section.css);
 @import url(components/chip-item.css);
 @import url(components/pricing-section.css);
+@import url(components/faq-section.css);
 
 html {
   box-sizing: border-box;
@@ -41,7 +42,7 @@ main {
   }
 
   @media (min-width: 2500px) {
-    row-gap: 20rem;
+    row-gap: 18rem;
   }
 }
 
@@ -87,6 +88,7 @@ a:focus-visible {
 /* border */
 .border-dashed {
   border: 2px dashed var(--color-border-muted);
+  border-radius: var(--radius-2xl);
 }
 
 /* button */
@@ -292,8 +294,18 @@ a {
 
 /* section */
 .section-content {
+  @media (min-width: 1024px) {
+    margin-inline: 8rem;
+  }
+
   @media (min-width: 1280px) {
-    margin-inline: 4rem;
+    margin-inline: 12rem;
+  }
+}
+
+.section-content-full {
+  @media (min-width: 1280px) {
+    margin-inline: 6rem;
   }
 
   @media (min-width: 1920px) {
@@ -312,4 +324,9 @@ a {
 
 .text-italic {
   font-style: italic;
+}
+
+.text-highlight {
+  color: var(--color-primary-highlight);
+  font-weight: var(--font-weight-semibold);
 }
