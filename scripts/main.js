@@ -12,6 +12,7 @@ import './components/PricingSection.js';
 import './components/FaqSection.js';
 import './components/FooterSection.js';
 import { initScrollSpy } from './scrollSpy.js';
+import { initRevealOnScroll } from './revealOnScroll.js';
 
 // on load: show the hero section elements
 window.addEventListener('DOMContentLoaded', () => {
@@ -21,6 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // nav scroll spy
   initScrollSpy();
+  // reveal on scroll
+  initRevealOnScroll();
 });
 
 // on scroll: show the navbar, hide the Nudge logo (desktop only)
