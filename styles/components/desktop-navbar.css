@@ -33,14 +33,6 @@
     }
   }
 
-  & .logo-icon-only {
-    display: block;
-
-    @media (min-width: 1280px) {
-      display: none;
-    }
-  }
-
   & .nav-links {
     padding: 0;
     display: flex;
