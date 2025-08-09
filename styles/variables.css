@@ -7,7 +7,9 @@
   --color-primary-lighter: #ccebea;
   --color-primary-lightest-1: #eaf7f6;
   --color-primary-lightest-2: #f5fbfb;
-  --color-primary-highlight: #2d9f99;
+  /* variants passing contrast checks */
+  --color-primary-aa: color-mix(in srgb, var(--color-primary) 88%, #000 12%);
+  --color-primary-highlight: var(--color-primary-aa);
 
   --color-gray: #9ca3af;
   --color-gray-darker: #4e5158;

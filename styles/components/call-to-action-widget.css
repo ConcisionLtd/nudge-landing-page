@@ -8,7 +8,7 @@
   background-color: var(--color-gray-lightest-1);
 
   & .heading {
-    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-2xl);
     line-height: var(--line-height-snug);
     text-wrap: balance;
   }
