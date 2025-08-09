@@ -1,4 +1,12 @@
 .mobile-nav-container {
+  height: 64px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-index-nav);
+  background-color: #ffffff66;
+  backdrop-filter: blur(10px);
   padding: 1.25rem 1rem;
 
   & .nav-top {

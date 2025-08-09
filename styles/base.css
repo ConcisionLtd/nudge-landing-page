@@ -21,11 +21,18 @@ html {
   & ::after {
     box-sizing: inherit;
   }
+
+  /* scrolling */
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+
+  @media (min-width: 1280px) {
+    scroll-padding-top: 10rem;
+  }
 }
 
 body {
-  margin-block: 0.75rem;
-  margin-inline: 0;
+  margin: 0;
   overflow-x: hidden;
   font-family: system-ui, sans-serif;
   font-size: var(--font-size-xl);
@@ -36,6 +43,7 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 8rem;
+  margin-top: 4rem;
   margin-bottom: 16rem;
 
   @media (min-width: 1024px) {
@@ -96,10 +104,12 @@ a {
   text-decoration: none;
   transition: color 0.3s ease;
 
-  &:hover {
-    color: var(--color-primary-dark);
-    text-decoration: underline;
-    text-underline-offset: 4px;
+  @media (min-width: 1280px) {
+    &:hover:not(.nav-link) {
+      color: var(--color-primary-dark);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
   }
 
   &:focus {
@@ -268,7 +278,6 @@ a {
 }
 
 .nav-item {
-  padding: 0.5rem 0.75rem;
   border-radius: var(--radius-lg);
   font-size: var(--font-size-lg);
   cursor: pointer;
@@ -281,6 +290,11 @@ a {
   &.active {
     color: var(--color-primary);
     font-weight: var(--font-weight-medium);
+  }
+
+  & > a {
+    display: block;
+    padding: 0.5rem 0.75rem;
   }
 }
 

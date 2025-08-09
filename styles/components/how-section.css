@@ -3,10 +3,19 @@
     display: grid;
     align-items: stretch;
     grid-template-columns: 1fr;
-    gap: 3.5rem;
+    gap: 3rem;
 
     @media (min-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+    }
+
+    @media (min-width: 1280px) {
+      margin-inline: 3.5rem; /* overrides margin on .section-content-full */
+    }
+
+    @media (min-width: 1536px) {
+      gap: 3rem;
     }
   }
 }
