@@ -230,8 +230,8 @@ h6 {
 
 /* helper */
 .helper {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  color: var(--color-text-subtle);
 }
 
 /* links */
