@@ -32,7 +32,12 @@
 
   & .hero-title {
     font-size: var(--font-size-6xl);
+    text-align: center;
     text-wrap: balance;
+
+    @media (min-width: 1280px) {
+      text-align: left;
+    }
   }
 
   & .cta-container {
