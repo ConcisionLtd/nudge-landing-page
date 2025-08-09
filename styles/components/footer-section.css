@@ -4,6 +4,25 @@ footer {
   color: var(--color-text-subtle);
   border-top: 1px solid var(--color-border-muted);
 
+  a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    @media (min-width: 1280px) {
+      &:hover {
+        color: var(--color-text-default);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-gray-light);
+      outline-offset: 2px;
+      border-radius: var(--radius-xs);
+    }
+  }
+
   & .footer-container {
     display: flex;
     flex-direction: column;

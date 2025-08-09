@@ -98,27 +98,6 @@ a:focus-visible {
   border-radius: var(--radius-xs);
 }
 
-/* anchor */
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: color 0.3s ease;
-
-  @media (min-width: 1280px) {
-    &:hover:not(.nav-link) {
-      color: var(--color-primary-dark);
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
-  }
-
-  &:focus {
-    outline: 2px solid var(--color-primary-light);
-    outline-offset: 2px;
-    border-radius: var(--radius-xs);
-  }
-}
-
 /* border */
 .border-dashed {
   border: 2px dashed var(--color-border-muted);
