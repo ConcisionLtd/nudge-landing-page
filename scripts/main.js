@@ -11,12 +11,16 @@ import './components/ChipItem.js';
 import './components/PricingSection.js';
 import './components/FaqSection.js';
 import './components/FooterSection.js';
+import { initScrollSpy } from './scrollSpy.js';
 
 // on load: show the hero section elements
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     document.querySelector('.hero').classList.add('visible');
   }, 100);
+
+  // nav scroll spy
+  initScrollSpy();
 });
 
 // on scroll: show the navbar, hide the Nudge logo (desktop only)

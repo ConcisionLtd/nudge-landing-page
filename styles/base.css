@@ -282,13 +282,15 @@ a {
   font-size: var(--font-size-lg);
   cursor: pointer;
 
-  &:hover {
-    color: var(--color-primary-dark);
-    background-color: var(--color-primary-lightest-2);
+  @media (min-width: 1280px) {
+    &:hover {
+      color: var(--color-primary-dark);
+      background-color: var(--color-primary-lightest-2);
+    }
   }
 
   &.active {
-    color: var(--color-primary);
+    color: var(--color-primary-highlight);
     font-weight: var(--font-weight-medium);
   }
 
