@@ -3,15 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customer Support App for Small Businesses | Nudge </title>
-    <link rel="stylesheet" href="/styles/base.css" />
 
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/hero-image-mobile.webp"
+      media="(max-width: 1023px)"
+      fetchpriority="high"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/hero-image-desktop.webp"
+      media="(min-width: 1024px)"
+      fetchpriority="high"
+    />
+
+    <title>Customer Support App for Small Businesses | Nudge</title>
+    <meta
+      name="description"
+      content="Nudge helps small businesses manage customer requests with ease. Track tickets, collaborate with your team, and keep customers updated from any device."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="application-name" content="Nudge" />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Nudge — Customer Support App for Small Businesses" />
+    <meta
+      property="og:description"
+      content="Manage customer requests, track tickets, and collaborate with your team. Nudge makes support simple for small businesses."
+    />
+    <meta property="og:image" content="https://nudgesupport.com/assets/social-preview.png" />
+    <meta property="og:url" content="https://nudgesupport.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Screenshot of the Nudge customer support app" />
+    <meta property="og:site_name" content="Nudge" />
+    <meta property="og:locale" content="en_GB" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nudge — Customer Support App for Small Businesses" />
+    <meta
+      name="twitter:description"
+      content="Manage customer requests, track tickets, and collaborate with your team. Nudge makes support simple for small businesses."
+    />
+    <meta name="twitter:image" content="https://nudgesupport.com/assets/social-preview.png" />
+    <meta name="twitter:image:alt" content="Screenshot of the Nudge customer support app" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Nudge",
+        "url": "https://nudgesupport.com",
+        "logo": "https://nudgesupport.com/assets/nudge-logo-256.png"
+      }
+    </script>
+
+    <link rel="canonical" href="https://nudgesupport.com" />
+
+    <!-- favicons -->
     <link rel="icon" href="/assets/favicon-256.png" sizes="256x256" type="image/png" />
     <link rel="icon" href="/assets/favicon-512.png" sizes="512x512" type="image/png" />
-    <link rel="apple-touch-icon" href="/assets/favicon-256.png" sizes="256x256" />
+    <link rel="apple-touch-icon" href="/assets/favicon-180.png" sizes="180x180" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#ffffff" />
 
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/styles/base.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -34,9 +96,7 @@
       <pricing-section id="pricing"></pricing-section>
       <faq-section id="faq"></faq-section>
       <section class="container">
-        <call-to-action-widget
-          heading="Find out if Nudge is right for you"
-        ></call-to-action-widget>
+        <call-to-action-widget heading="Find out if Nudge is right for you"></call-to-action-widget>
       </section>
     </main>
 

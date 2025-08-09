@@ -28,6 +28,10 @@
 
   & .hero-description {
     line-height: var(--line-height-relaxed);
+
+    & li::marker {
+      color: var(--color-text-muted);
+    }
   }
 
   & .hero-title {
