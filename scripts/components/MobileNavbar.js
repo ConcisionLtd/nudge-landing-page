@@ -5,6 +5,7 @@ class MobileNavbar extends HTMLElement {
     this.innerHTML = template;
 
     const toggleButton = this.querySelector('.hamburger');
+    const navContainer = this.querySelector('.mobile-nav-container');
     const navPanel = this.querySelector('.offcanvas-panel');
     const navItems = navPanel.querySelectorAll('.nav-item');
 
@@ -62,13 +63,19 @@ class MobileNavbar extends HTMLElement {
 
     // functions
     const openNavPanel = () => {
+      navContainer.setAttribute('data-open', '');
       navPanel.setAttribute('data-open', '');
       toggleButton.setAttribute('aria-expanded', 'true');
+      // disable scrolling on html
+      document.documentElement.style.overflow = 'hidden';
     };
 
     const closeNavPanel = () => {
+      navContainer.removeAttribute('data-open');
       navPanel.removeAttribute('data-open');
       toggleButton.setAttribute('aria-expanded', 'false');
+      // enable scrolling on html
+      document.documentElement.style.overflow = '';
     };
   }
 }

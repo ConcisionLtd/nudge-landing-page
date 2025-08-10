@@ -5,8 +5,8 @@
   left: 0;
   right: 0;
   z-index: var(--z-index-nav);
-  background-color: #ffffff66;
-  backdrop-filter: blur(10px);
+  background-color: #ffffffbb;
+  backdrop-filter: blur(4px);
   padding: 1.25rem 1rem;
 
   & .nav-top {
@@ -55,21 +55,22 @@
       align-items: center;
       row-gap: 1.5rem;
     }
-
-    /* control overlay visibility */
-    &[data-open] ~ .overlay {
-      opacity: 1;
-      pointer-events: auto;
-    }
   }
 
-  & .overlay {
+  /* control overlay visibility */
+  &[data-open] + .overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  & + .overlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--color-overlay);
+    background-color: #ffffff66;
+    backdrop-filter: blur(4px);
     z-index: var(--z-index-overlay);
     opacity: 0;
     pointer-events: none;
